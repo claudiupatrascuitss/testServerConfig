@@ -1,6 +1,5 @@
 ---
-spring:
-  application:
-    name: a-bootiful-client
-  profiles:
-    active: test
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
