@@ -5,3 +5,9 @@ eureka:
       defaultZone: http://localhost:8009/eureka/
   instance:
     instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+ 
+---
+spring:
+  profiles: subject
+  application:
+    name: subject
